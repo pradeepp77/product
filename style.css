@@ -1,0 +1,159 @@
+@import url(https://fonts.google.com/specimen/Montserrat);
+@import url(https://fonts.google.com/specimen/Fraunces);
+
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:hsl(30, 38%, 92%);
+ 
+}
+
+.Product{
+    width: 600px;
+    height: 450px;
+    justify-content:center ;
+    align-items: center;
+    display: flex;
+    background-color:white;
+    border-radius: 10px;
+    flex-direction: row;
+    
+
+}
+.product-image {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.product-details {
+    padding-left: 20px;;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 20px;
+    padding-bottom: 50px;
+
+}
+
+.og_cost{
+    padding-left: 20px;
+    padding-top: 14px;
+}
+
+
+h5{
+    font-family:'Montserrat'sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-size: 12px;
+    
+}
+h1{
+    font-family:'Fraunces',sans-serif;
+    color:hsl(212, 21%, 14%);
+    font-weight: 700;
+    font-size:35px;
+    color: hsl(212, 21%, 14%);
+    
+}
+.product-details p{
+    padding-top:;
+    align-items: center;
+    font-size: 19px;
+    font-family:'Montserrat',serif;
+    color: hsl(228, 12%, 48%);
+
+}
+
+.currency{
+    display: flex;
+    justify-content: flex-start;
+    color: hsl(228, 12%, 48%);  
+}
+
+.btn{
+    border-radius: 10px;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    color: white;
+    font-size: 17px;
+    padding-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    justify-content: center ;
+    cursor: pointer;
+      
+    
+}
+
+.cost{
+    color:  hsl(158, 36%, 37%);
+    font-family:'Montserrat',sans-serif;
+    padding-bottom: 15px;
+
+}
+.og_cost{
+    padding-top: 10px;
+    text-decoration: line-through;
+    font-size: 20px;
+}
+.b{
+    width: 20px;
+    height: 21px;
+    justify-content: center;
+}
+
+.btn:hover {
+    background-color: hsl(212, 21%, 14%)
+}
+.product-image-1{
+    display: none;
+}
+@media (max-width:600px){
+    .Product{
+        flex-direction: column;
+        display:flex ;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        height: auto;
+        max-width:600px ;
+
+
+    }
+    .product-image{
+        display: none;
+    }
+    .product-image-1{
+        display: block;
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+        object-fit:contain;
+
+    }
+    .product-details{
+        flex-direction: column;
+
+
+    }
+    body{
+        padding: 40px;
+
+
+    }
+    
+    }
